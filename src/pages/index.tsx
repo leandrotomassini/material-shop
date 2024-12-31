@@ -3,10 +3,6 @@
 
 export default function Home() {
   return (
-    <h1
-      className="text-2xl font-bold"
-    >
-      Teslo Shop
-    </h1>
+    <h1>Teslo shop</h1>
   );
 }
