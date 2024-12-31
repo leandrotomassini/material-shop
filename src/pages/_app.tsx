@@ -1,17 +1,14 @@
-import type { AppProps } from 'next/app';
-import { ThemeProvider } from '@emotion/react';
+import type { AppProps } from "next/app";
+import { NextUIProvider } from "@nextui-org/react";
 
-import '@/styles/globals.css';
-import { lightTheme } from '@/themes';
-import { CssBaseline } from '@mui/material';
+import "@/styles/globals.css";
 
 
 
 export default function App( { Component, pageProps }: AppProps ) {
   return (
-    <ThemeProvider theme={ lightTheme }>
-      <CssBaseline />
+    <NextUIProvider>
       <Component { ...pageProps } />
-    </ThemeProvider>
+    </NextUIProvider>
   );
 }
