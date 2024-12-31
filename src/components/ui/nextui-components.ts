@@ -14,6 +14,7 @@ export {
   DropdownSection,
   DropdownTrigger,
   Input,
+  Link,
   Listbox,
   ListboxItem,
   Modal,

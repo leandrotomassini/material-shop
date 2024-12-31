@@ -7,6 +7,7 @@ export {
   IoBookOutline,
   IoBulbOutline,
   IoCalendarOutline,
+  IoCartOutline,
   IoChevronBackOutline,
   IoChevronDownOutline,
   IoChevronForwardOutline,
