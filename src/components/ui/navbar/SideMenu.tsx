@@ -30,6 +30,8 @@ export const SideMenu: FC<Props> = ( { toggleMenu, isOpen = false } ) => {
         <UI.Navbar className="p-4 pt-20 flex flex-col">
           <UI.NavbarContent className="flex flex-col gap-4">
 
+            <UI.Input label="Buscar" size={ 'md' } type="text" />
+
             <Link color="foreground" href="/" className="flex">
               <h1 className="text-xl font-bold">Teslo | </h1>
               <h2 className="text-xl pl-1">Shop</h2>
@@ -39,23 +41,52 @@ export const SideMenu: FC<Props> = ( { toggleMenu, isOpen = false } ) => {
               href="#"
               className="text-gray-700 hover:text-gray-900 transition-colors"
             >
-              Hombres
+              Perfil
             </Link>
 
             <Link
               href="#"
               className="text-gray-700 hover:text-gray-900 transition-colors"
             >
-              Mujeres
+              Mis ordentes
             </Link>
 
             <Link
               href="#"
               className="text-gray-700 hover:text-gray-900 transition-colors"
             >
-              Niños
+              Ingresar
             </Link>
 
+            <Link
+              href="#"
+              className="text-gray-700 hover:text-gray-900 transition-colors"
+            >
+              Salir
+            </Link>
+
+            <hr />
+
+            <Link
+              href="#"
+              className="text-gray-700 hover:text-gray-900 transition-colors"
+            >
+              Productos
+            </Link>
+
+            <Link
+              href="#"
+              className="text-gray-700 hover:text-gray-900 transition-colors"
+            >
+              Ordenes
+            </Link>
+
+            <Link
+              href="#"
+              className="text-gray-700 hover:text-gray-900 transition-colors"
+            >
+              Usuario
+            </Link>
           </UI.NavbarContent>
         </UI.Navbar>
       </div>
