@@ -1,4 +1,4 @@
-import { ShopLayout } from '@/components';
+import { ProductSlideshow, ShopLayout } from '@/components';
 import { Icons, UI } from '@/components/ui';
 import { initialData } from '@/database/products';
 
@@ -9,8 +9,7 @@ const ProductPage = () => {
     <ShopLayout title={ product.title } pageDescription={ product.description }>
       <div className="grid gap-3 grid-cols-12 justify-center">
         <div className="col-span-12 md:col-span-7">
-          {/* Slideshow */ }
-          A
+          <ProductSlideshow images={ product.images } />
         </div>
 
         <UI.Card className="col-span-12 md:col-span-5">
