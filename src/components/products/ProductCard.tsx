@@ -11,10 +11,12 @@ interface Props {
 }
 
 export const ProductCard: FC<Props> = ( { product } ) => {
+
+
+
   return (
     <UI.Card
       className="grid-item"
-      key={ product.slug }
       isPressable
     >
       <UI.CardBody>
@@ -25,8 +27,9 @@ export const ProductCard: FC<Props> = ( { product } ) => {
           isZoomed
         />
       </UI.CardBody>
-      <UI.CardFooter>
+      <UI.CardFooter className="flex flex-col">
         <h3 className="text-xl">{ product.title }</h3>
+        <h3 className="text-2xl font-bold">${ product.price }</h3>
       </UI.CardFooter>
     </UI.Card>
   );
