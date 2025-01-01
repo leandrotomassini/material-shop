@@ -10,9 +10,7 @@ interface Props {
   toggleMenu: () => void;
 }
 
-export const Sidebar: FC<Props> = ( { toggleMenu, isOpen = false } ) => {
-
-
+export const SideMenu: FC<Props> = ( { toggleMenu, isOpen = false } ) => {
 
   return (
     <>

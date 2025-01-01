@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import { Icons, UI } from '../';
-import { Sidebar } from './Sidebar';
+import { SideMenu } from './SideMenu';
 
 
 
@@ -62,7 +62,7 @@ export const Navbar = () => {
         </UI.NavbarContent>
       </UI.Navbar>
 
-      <Sidebar isOpen={ isOpen } toggleMenu={ toggleMenu } />
+      <SideMenu isOpen={ isOpen } toggleMenu={ toggleMenu } />
     </>
   );
 };
